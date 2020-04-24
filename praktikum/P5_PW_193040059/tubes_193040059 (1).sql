@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2020 at 05:02 AM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.8
+-- Generation Time: Apr 24, 2020 at 11:33 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,16 +19,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pw_193040059`
+-- Database: `tubes_193040059`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mahasiswa`
+-- Table structure for table `musik`
 --
 
-CREATE TABLE `mahasiswa` (
+CREATE TABLE `musik` (
   `id` int(11) NOT NULL,
   `no` int(100) NOT NULL,
   `nama alat musik` varchar(100) NOT NULL,
@@ -38,10 +38,10 @@ CREATE TABLE `mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `mahasiswa`
+-- Dumping data for table `musik`
 --
 
-INSERT INTO `mahasiswa` (`id`, `no`, `nama alat musik`, `cara main`, `harga`, `gambar`) VALUES
+INSERT INTO `musik` (`id`, `no`, `nama alat musik`, `cara main`, `harga`, `gambar`) VALUES
 (1, 1, 'Gitar', 'Dipetik', 500, 'pic1.jpg'),
 (2, 2, 'Angklung', 'Digoyang', 450, 'pic2.jpg'),
 (3, 3, 'Piano', 'Ditekan', 900, 'pic3.jpg'),
@@ -58,9 +58,9 @@ INSERT INTO `mahasiswa` (`id`, `no`, `nama alat musik`, `cara main`, `harga`, `g
 --
 
 --
--- Indexes for table `mahasiswa`
+-- Indexes for table `musik`
 --
-ALTER TABLE `mahasiswa`
+ALTER TABLE `musik`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -68,10 +68,11 @@ ALTER TABLE `mahasiswa`
 --
 
 --
--- AUTO_INCREMENT for table `mahasiswa`
+-- AUTO_INCREMENT for table `musik`
 --
-ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;COMMIT;
+ALTER TABLE `musik`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

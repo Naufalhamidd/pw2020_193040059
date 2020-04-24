@@ -2,7 +2,7 @@
 // fungction untuk melakukan koneksi
 function koneksi(){
 $conn = mysqli_connect("localhost","root","") or die("koneksi ke DB gaggal");
-mysqli_select_db($conn, "pw_193040059") or die("Database salah");
+mysqli_select_db($conn, "tubes_193040059") or die("Database salah");
 
 return $conn;
 }
@@ -19,5 +19,3 @@ function query($sql){
     }
     return $rows;
 }
-
-?>
