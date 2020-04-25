@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 24, 2020 at 11:21 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Generation Time: Apr 25, 2020 at 04:04 PM
+-- Server version: 10.1.26-MariaDB
+-- PHP Version: 7.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -42,16 +42,18 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`id`, `nama`, `nrp`, `email`, `jurusan`, `gambar`) VALUES
-(1, 'Shandika Galih', '043040023', 'shandikagalih@unpas.ac.id', 'Teknik Informatika', 'shandika.jpg'),
-(2, 'Doddy', '133040123', 'doddy@yahoo.com', 'Teknik mesin', 'doddy.png'),
-(3, 'Erik', '153030321', 'erik@gmail.com', 'Ekonomi', 'erik.jpg'),
-(4, 'Rayhan', '193040044', 'rayhan@gmail.com', 'Teknik Informatika', 'rayhan.jpg'),
-(5, 'Aldi', '193040054', 'aldi@yahoo.com', 'Teknik Informatika', 'aldi.jpg'),
-(6, 'Viqri', '193040041', 'viqri@gmail.com', 'Teknik Informatika', 'viqri.png'),
-(7, 'Usep', '193040051', 'usep@yahoo.com', 'Teknik Informatika', 'usep.jpg'),
-(8, 'Rifky', '193040068', 'rifky@gmail.com', 'Teknik Informatika', 'rifky.png'),
-(9, 'Aji', '193040046', 'aji@yahoo.com', 'Teknik Informatika', 'aji.png'),
-(10, 'Rio', '193040057', 'rio@gmail.com', 'Teknik Informatika', 'rio.png');
+(1, 'bangbang', '74983909', 'bangbang@gmail.com', 'Teknik Informatika', 'pic1.jpg'),
+(2, 'nartam', '133040123', 'nartam@gmail.com', 'Teknik mesin', 'pic2.jpg'),
+(3, 'berto', '153030321', 'berto@gmail.com', 'Ekonomi', 'pic3.jpg'),
+(4, 'Rayhan', '193040044', 'rayhan@gmail.com', 'Teknik Informatika', 'pic4.jpg'),
+(5, 'Aldi', '193040054', 'aldi@yahoo.com', 'Teknik Informatika', 'pic5.jpg'),
+(6, 'Viqri', '193040041', 'viqri@gmail.com', 'Teknik Informatika', 'pic6.jpg'),
+(7, 'Usep', '193040051', 'usep@yahoo.com', 'Teknik Informatika', 'pic7.jpg'),
+(8, 'Rifky', '193040068', 'rifky@gmail.com', 'Teknik Informatika', 'pic8.jpg'),
+(9, 'Aji', '193040046', 'aji@yahoo.com', 'Teknik Informatika', 'pic9.jpg'),
+(10, 'Rio', '193040057', 'rio@gmail.com', 'Teknik Informatika', 'pic10.jpg'),
+(11, 'kahis', '89012039', 'kahis@gmail.com', 'pangan', 'pic11.jpg'),
+(12, 'kahis', '89012039', 'hahah@gmail.com', 'pangan', 'pic1.jpg');
 
 --
 -- Indexes for dumped tables
@@ -71,8 +73,7 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
