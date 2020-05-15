@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2020 at 04:04 PM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.8
+-- Generation Time: May 15, 2020 at 09:03 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -51,9 +51,27 @@ INSERT INTO `mahasiswa` (`id`, `nama`, `nrp`, `email`, `jurusan`, `gambar`) VALU
 (7, 'Usep', '193040051', 'usep@yahoo.com', 'Teknik Informatika', 'pic7.jpg'),
 (8, 'Rifky', '193040068', 'rifky@gmail.com', 'Teknik Informatika', 'pic8.jpg'),
 (9, 'Aji', '193040046', 'aji@yahoo.com', 'Teknik Informatika', 'pic9.jpg'),
-(10, 'Rio', '193040057', 'rio@gmail.com', 'Teknik Informatika', 'pic10.jpg'),
-(11, 'kahis', '89012039', 'kahis@gmail.com', 'pangan', 'pic11.jpg'),
-(12, 'kahis', '89012039', 'hahah@gmail.com', 'pangan', 'pic1.jpg');
+(10, 'Rio', '193040057', 'rio@gmail.com', 'Teknik Informatika', 'pic10.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(64) NOT NULL,
+  `password` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(1, 'admin', 'admin'),
+(2, 'opal123', '$2y$10$ool6jVyWORVga3VweZu4Oe33yI/6PtNEFU3MMmcirwdXHB1TCRRjG');
 
 --
 -- Indexes for dumped tables
@@ -66,6 +84,12 @@ ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -73,7 +97,14 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
